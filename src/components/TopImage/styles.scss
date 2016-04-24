@@ -1,0 +1,20 @@
+@import '../../../src/containers/App/styles/screens';
+
+:local(.styles) {
+  position: relative;
+
+  background: #efefef;
+  background-size: 100% auto;
+
+  height: 500px;
+  padding-top: 5rem;
+
+  @media (min-width: 768px) and (max-width: 992px) {
+    height: 340px;
+  }
+
+  @media (#{ $phone }) {
+    height: 320px;
+  }
+
+}
