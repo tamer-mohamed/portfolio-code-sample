@@ -6,9 +6,14 @@ import { setParallax } from '../../utils/parallax';
 
 
 import Greetings from '../Greetings';
+import ProfilePic from '../ProfilePic';
 
 /* component styles */
 import { styles } from './styles.scss';
+
+
+const profilePhoto = require('./files/tamerelsayed.png');
+
 
 export class TopImage extends Component {
 
@@ -37,11 +42,11 @@ export class TopImage extends Component {
         <section className={`${styles}`} ref="parallax">
           <div className="container">
             <div className="row">
-              <div className="col-xs-12 col-sm-12 col-md-8 col-lg-8 text-center">
 
-                <Greetings name={this.props.portfolio.owner} desc={this.props.portfolio.desc}/>
+              <Greetings name={this.props.portfolio.owner} desc={this.props.portfolio.desc}/>
 
-              </div>
+              <ProfilePic src={profilePhoto}/>
+
             </div>
           </div>
         </section>
